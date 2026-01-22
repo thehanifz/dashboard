@@ -1,0 +1,19 @@
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+# === GOOGLE CREDENTIAL ===
+GOOGLE_APPLICATION_CREDENTIALS = os.getenv(
+    "GOOGLE_APPLICATION_CREDENTIALS"
+)
+
+SPREADSHEET_ID = os.getenv("SPREADSHEET_ID")
+
+# === RAW DATA SHEET ===
+SHEET_NAME = os.getenv("SHEET_NAME")
+
+# === STATUS MASTER CONFIG ===
+STATUS_SHEET_NAME = os.getenv("STATUS_SHEET_NAME")
+STATUS_COL_PRIMARY = os.getenv("STATUS_COL_PRIMARY")
+STATUS_COL_DETAIL = os.getenv("STATUS_COL_DETAIL")
